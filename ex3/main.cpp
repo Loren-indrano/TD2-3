@@ -1,12 +1,9 @@
-#include <stdio.h>
+#include <iostream>
 
-#define MAX1 100
-static const int MAX2 = 100;
+// Déclaration de la fonction définie dans fonctions.cpp
+void afficherConstantes();
 
 int main() {
-    // int *p1 = &MAX1; // Erreur de compilation
-    int *p2 = &MAX2;    // Correct
-
-    printf("Adresse de MAX2 : %p\n", (void*)p2);
+    afficherConstantes();
     return 0;
 }
